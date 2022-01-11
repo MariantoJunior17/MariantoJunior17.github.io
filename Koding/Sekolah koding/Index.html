@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <!-- <script src=Script.js></script> -->
+    <style>
+        #wrap {
+            background-color: black;
+            color: white;
+            font-size: 24px;
+        }
+
+        .tambah {
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- sesi 2 -->
+    <div id="box1">
+        <div id="p1">Paragraf</div>
+    </div>
+
+    <!-- <div onclick="gantiwarna()" class="random" id="divv"> -->
+    <div class="random" id="divv">
+
+    </div>
+    <!-- pembatas  -->
+    <div id="wrap"></div>
+    <p>cari objek metode JavaScript</p>
+
+    <input type="text" value="nama" id="input">
+    <input type="submit" value="submit" id="submit">
+    <p id="pe1"></p>
+
+    <hr>
+    Nama : <span id="nama"></span>
+    Umur : <span id="umur"></span>
+    Pekerjaan : <span id="pekerjaan"></span>
+
+    <div id="kotak"></div>
+    
+    <hr>
+    Nama : <span id="nama1"></span>
+    Umur : <span id="umur1"></span>
+    Pekerjaan : <span id="pekerjaan1"></span>
+    
+</body>
+<script>
+
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    // Ecma Script 6
+    /* var function scope dan global scope;
+    let dan const adalah block scope
+
+
+    
+    */
+
+    // let nama = "budi";
+
+
+    // console.log(nama);
+
+
+    // arrow function
+
+    // var members = ["ebidin" , "sukma" , "agus"];
+    
+    // members.forEach((member, index) => {
+    //     console.log(member + " " + index)
+    // })
+    
+    
+    
+    // let members = ["ebidin" , "sukma" , "agus"];
+
+    // let membersindex = members.map((member, index) => 
+    //     member + "----" + index )
+
+    // console.log(membersindex);
+
+    // arrow funtion dengan defaulf parameter 3 cara dan dari fungsi juga
+
+    GenerateTitle = () => {
+        return "ini judul standar "
+    }
+
+    CreatTag = (title = GenerateTitle() , tag = "css") => {
+
+        // default tag
+
+        // tag = tag || "css"
+
+        // cara dua
+
+        // if (typeof tag === "undefined") {
+        //     tag = "html"
+        // }
+
+        // atau yang title pake fungsi 
+
+
+
+        console.log("Judulnya... " + title + "Tagnya... " + tag)
+    }
+
+
+    // CreatTag("fafaf" , );
+    CreatTag();
+    
+
+
+                    SignIn = (...member) => {
+                        console.log(member)
+                    }
+
+
+                    username = "marianto";
+                    password = "11234";
+                    umur = "39";
+
+                    SignIn(username, password, umur)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // document.getElementById("box").innerHTML ="tembak dari id";
+
+    // var boxes = document.getElementsByClassName('boxes');
+    // boxes[0].innerHTML = "tembak dari class 1";
+    // boxes[1].innerHTML = "tembak dari class 1";
+    // boxes[2].innerHTML = "tembak dari class 1";
+
+    // var list = document.getElementsByTagName('li');
+    // list[0].innerHTML = "ini list ditembak 1";
+    // list[1].innerHTML = "ini list ditembak 1";
+    // list[2].innerHTML = "ini list ditembak 1";
+
+
+    // sesi 2
+    // var h2 = document.createElement('h5');
+    // var text = document.createTextNode("belajar javascript");
+    // var box = document.getElementById("box1");
+    // h2.appendChild(text);
+    // // var p1 = document.getElementById("p1");
+    // box.appendChild(h2);
+
+
+    // var divv = document.getElementById("divv");
+    // divv.style.height = "50px";
+    // divv.style.width = "50px";
+    // divv.style.backgroundColor = "red";
+    // // divv.className += 'tambah';
+    // divv.setAttribute("class", "tambah");
+
+    // function gantiwarna () {
+    //     divv.style.backgroundColor = "blue";
+    // }
+
+    // divv.onclick = function () {gantiwarna()}
+
+
+
+    // var input = document.getElementById("input");
+    // var submit = document.getElementById("submit");
+    // var pe1 = document.getElementById("pe1");
+
+    // submit.onclick = function() {
+    //  var text = input.nodeValue;
+    //  pe1.innerHTML = text;
+    // }
+
+
+
+    // // ------------------------------------------------------------------------
+    // bagian objek
+    // var programmer = {
+    //     nama : "marianto",
+    //     umur : 21,
+    //     pekerjaan : "ngangur",
+
+    //     getData : function() {
+    //         return  "Ini lane function >>>" + "nama :" + this.nama + " umur :" + this.umur;
+    //     },
+    //     setData : function(namaorang) {
+    //         this.nama = namaorang;
+    //     },
+    // }
+
+
+    // programmer.setData("alex");
+    // document.getElementById("kotak").innerHTML = programmer.getData();
+
+    // document.getElementById("nama").innerHTML = programmer.nama;
+    // document.getElementById("umur").innerHTML = programmer.umur;
+    // document.getElementById("pekerjaan").innerHTML = programmer.pekerjaan;
+    
+    // Cara Kedua
+    
+//     var designer = new Object();
+//     designer.nama1 = "Marianto";
+//     this.umur1 = 12;
+//     designer.pekerjaan1 = " ngangur";
+    
+//     document.getElementById("nama1").innerHTML = designer.nama1;
+//     document.getElementById("umur1").innerHTML = this["umur1"];
+//     document.getElementById("pekerjaan1").innerHTML = designer.pekerjaan1;
+
+// -------------------------------------------------------------------
+// // objek prototype 
+//     function pemain_bola (nama , umur) {
+//         this.nama = nama;
+//         this.umur = umur;
+
+//     }
+
+//     var ronaldo = new pemain_bola ("ronaldo" , 12);
+//     var mesii = new pemain_bola("messi ganteng" , 12);
+
+//     // CARA MENAMBAHKAN OBJEK PROTOYPE LAIN  LAIN DI LUAR FUNGSI
+
+//     pemain_bola.prototype.pekerjaan = "main bola";
+
+//     // document.getElementById("kotak").innerHTML = ronaldo.nama;
+//     // document.getElementById("kotak").innerHTML = mesii.nama;
+//     document.getElementById("kotak").innerHTML = ronaldo.pekerjaan;
+
+
+
+// // ini bagian 1 dibawah bagian 2 diatas
+
+    // var tabungan = "ini t Kecil"
+    // var Tabungan = " ini T Besar ";
+    // var Gab_text = tabungan + Tabungan;
+    // Gab_text = "ini yang baru"
+    // // var case sensitif
+    // var text = "ini adalah text";
+    // var angka = 555555;
+    // var angka2 = 1000.5;
+    // var angka_baru = angka + angka2;
+    // tipe data 
+    // document.getElementById("wrap").innerHTML= angka + angka2 ;
+    // document.getElementById("wrap").innerHTML= angka_baru;
+    // document.getElementById("wrap").innerHTML= Gab_text;
+
+    // var angka3 = 20.232233223232;
+    // var angka3_2koma = angka3.toFixed(2);
+    // var angka3_str = angka3.toString() + "111111";
+    // var angka_acak = Math.random();
+    // var angka_min = Math.min(6,2,3,4,5);
+    // var angka_max = Math.max(6,2,3,4,5);
+    // var angka_round = Math.round(123.123);
+    // var angka_ceil = Math.ceil(123.123);
+    // var angka_floor = Math.floor(123.123);
+    // var batas = 10;
+    // var Batas_angkarandom = Math.floor(Math.random() * batas) + 1;
+
+    
+    // angka3++;
+
+    // angka3 += 40;
+    // angka3 = angka3 + 40
+    // // sama saja
+
+
+    // document.getElementById("wrap").innerHTML= angka3_2koma;
+    // document.getElementById("wrap").innerHTML= angka3_str;
+    // document.getElementById("wrap").innerHTML= angka_acak;
+    // document.getElementById("wrap").innerHTML= angka_min;
+    // document.getElementById("wrap").innerHTML= angka_max;
+    // document.getElementById("wrap").innerHTML= angka_round;
+    // document.getElementById("wrap").innerHTML= angka_ceil;
+    // document.getElementById("wrap").innerHTML= angka_floor;
+    // document.getElementById("wrap").innerHTML= Batas_angkarandom;
+
+    // bagian method ^^^^^
+
+    // var nama = "marIANto";
+    // var jumlah = "12345.32424223"
+
+    // var hasil_nama = nama.length;
+    // var hasil_indexof = nama.indexOf("a");
+    // var hasil_lastIndexof = nama.lastIndexOf("a")
+    // var hasil_search = nama.search("ria")
+    // var hasil_charAt = nama.charAt(3);
+    // var hasil_uppercase = nama.toUpperCase();
+    // var hasil_lowercase = nama.toLowerCase();
+    // var hasil_replace  = nama.replace("mar", "hai");
+    // var hasil_substring = nama.substring(1, 5);
+    // var hasil_substr = nama.substr(3, 3);
+    // var hasil_parseint = parseInt(jumlah) + 1222;
+    // var hasil_parsefloat = parseFloat(jumlah) + 1222;
+
+    // methode lainya 
+    /* Search. CharAt, touppercase, tolowercase, replace, sub
+    */
+
+    // document.getElementById("wrap").innerHTML= hasil_nama;
+    // document.getElementById("wrap").innerHTML= hasil_indexof;
+    // document.getElementById("wrap").innerHTML= hasil_lastIndexof;
+    // document.getElementById("wrap").innerHTML= hasil_search;
+    // document.getElementById("wrap").innerHTML= hasil_charAt;
+    // document.getElementById("wrap").innerHTML= hasil_uppercase;
+    // document.getElementById("wrap").innerHTML= hasil_lowercase;
+    // document.getElementById("wrap").innerHTML= hasil_replace;
+    // document.getElementById("wrap").innerHTML= hasil_substring;
+    // document.getElementById("wrap").innerHTML= hasil_substr ;
+    // document.getElementById("wrap").innerHTML= hasil_parseint ;
+    // document.getElementById("wrap").innerHTML= hasil_parsefloat;
+
+    // sekarang fungsi ^^^^^
+    
+    // ---------------------------------------------------
+    // function printText() {
+    //     var sambutan = "Marianto Junior"
+    //     document.getElementById("wrap").innerHTML = sambutan;
+    //     // alert("selamat datang");
+    // }
+    // printText();
+
+
+
+
+    // ---------------------------------------------------
+    // function printText2(namaorang) {
+        //     document.getElementById("wrap").innerHTML =namaorang;       
+        // }
+        //  printText2("tino");
+        
+        
+        
+        
+
+        // // ---------------------------------------------------
+        
+        // function menjumlahkan(angka1, angka2) {
+        //     return angka1 + angka2;
+        // }
+        
+        // var text =  menjumlahkan(12,14);
+        
+        // document.getElementById("wrap").innerHTML =text;
+
+        // ---------------------------------------------------------
+        // array 
+
+
+
+        // var kotak =["marianto", "junior" , 17];
+        // kotak[0] = "Mar";
+
+        // var text = "nama saya " + kotak[1];
+        // document.getElementById("wrap").innerHTML =text;
+        // document.getElementById("wrap").innerHTML =kotak;
+        
+
+
+
+        // var namaOrang =["joni", "alex", "tiqa"];
+        // var namaOrang2 =["1", "2", "3"];
+        // var namaOrang3 =["4", "5", "6"];
+        
+        // // document.getElementById("wrap").innerHTML = namaOrang.sort();
+        // // document.getElementById("wrap").innerHTML = namaOrang.reverse();
+        // // document.getElementById("wrap").innerHTML = namaOrang.concat(namaOrang2, namaOrang3);
+        // // document.getElementById("wrap").innerHTML = namaOrang.length;
+      
+        // var contoh = namaOrang.concat(namaOrang2, namaOrang3)
+        // document.getElementById("wrap").innerHTML = contoh.join("|");
+        
+
+
+        // var modal = namaOrang.pop();
+        // var modal = namaOrang.push("emmy");
+        // var modal = namaOrang.shift("emmy");
+        // var modal = namaOrang.unshift("emmy");
+        // document.getElementById("wrap").innerHTML =  namaOrang;
+        
+        
+        // ----------------------------------------------------------
+        // bagian if
+        // var orang1 = 25000;
+        // var orang2 = 50000;
+        // var orang3 = 1150000;
+
+        // var barang = 50000;
+
+
+
+        
+        // if(orang1 == barang) {
+        //     alert('Uang orang 1 cukup')
+        // }
+        // else if (orang2 == barang) {
+        //     alert("uang orang 2 cukup") 
+        // }
+        // else {
+        //     alert("uang mereka berdua tidak cukup")
+        // }
+        
+
+
+        
+        // if(orang1 == barang || orang2 == barang) {
+        //     alert("bisa beli")
+        // }
+        // else {
+        //     alert("tidak bisa beli")
+        // }
+
+
+
+
+
+        // if(orang3 >= barang ) {
+        //     if(orang3 >= barang*2) {
+        //         alert("bisa  beli 2 barang")
+        //     }
+        //     else {
+        //         alert("tidak bisa beli 2")
+        //     }
+        // }
+
+        // --------------------------------------------------------
+        // bagian switch
+
+        // var varswith = "marianto";
+
+        // switch (varswith) {
+        //     case "marianto":
+        //         alert("nama saya marianto");
+        //         break;
+        //     case "andy":
+        //         alert("nama saya andy");
+        //         break;
+        //     case "doni":
+        //         alert("nama saya doni");
+        //         break;
+        //     default:
+        //         alert("tidak ada data");
+        // }
+
+        // --------------------------------------------------------------
+        // bagian loop
+        
+        // for(var i=0; i<5; i++) {
+        //     alert(i);
+        // }
+        
+        // --------------------------------------------------------------
+        // // bagian while loop
+        //  var i = 0;
+        //  var text = "";
+        //  while( i < 6 ) {
+        //     //  text += "<br>angkanya adalah " + i;
+        //     i++;
+        //     // alert(i)
+             
+        //  }
+
+        //  document.getElementById("wrap").innerHTML = i;
+
+    
+    </script>
+</html>

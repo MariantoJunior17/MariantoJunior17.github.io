@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+
+<script>
+
+    //     document.writeln("hello world");
+    //     document.writeln("<br>");
+    //     document.writeln(12);
+    //     document.writeln("<br>");
+    //     document.writeln(0b1011101);
+    //     document.writeln("<br>");
+    //     document.writeln(true);
+    //     document.writeln("<br>");
+    //     document.writeln(false);
+    //     document.writeln("<br>");
+    //     document.writeln("<br>");
+    //     // document write line 
+    //     // document write line         
+        
+    //     document.writeln("<textarea cols='100' rows='10'>");
+    //     document.writeln("Eko \nKurniawan Khannedy");
+    //     document.writeln("Home \\ Beranda \\ Gallery");
+    //     document.writeln('\'Belajar Javascript\'');
+    //     document.writeln("</textarea>");
+        
+        
+    //     document.writeln("marianto Junior"); 
+    //     document.writeln("<br>");
+    // document.writeln("marianto Junior");
+    // document.writeln("<br>");
+    // document.writeln("marianto Junior");
+    // document.writeln("<br>");
+    // document.writeln("marianto Junior");
+    // document.writeln("<br>");
+    // document.writeln("marianto Junior");
+    // document.writeln("<br>");
+    // document.writeln("marianto Junior");
+
+    // var fullName;
+    // var lastName;
+    // var firstName;
+
+    // firstName = "Marianto"
+    // lastName = "Junior";
+    // fullName = firstName + lastName;
+    // // document.writeln(fullName);
+
+
+    // let result = 1 + 2; //3
+    // document.writeln("<p> 1 + 2 = " + result + "<p>");
+
+        
+    // result = 3 - 1; //2 
+    // document.writeln("<p> 3 - 1 = " + result + "<p>");
+        
+    // result = 2 * 2; //2 
+    // document.writeln("<p> 2 * 2 = " + result + "<p>");
+
+    
+    // let hasil = + 1;
+    // document.writeln("<p>" + hasil + "<p>");
+
+    //  hasil--;
+    // document.writeln("<p>" + hasil + "<p>");
+
+    //  hasil++;
+    // document.writeln("<p>" + hasil + "<p>");
+
+    //  hasil = -hasil;
+    // document.writeln("<p>" + hasil + "<p>");
+
+    //Operatar Perbandingan
+    
+    // let hasil1 = 5 == "5"; // harus smam value
+    // document.writeln("<p>" + hasil1 + "<p>");
+        
+    // let hasil2 = 5 === "5"; //harus sama value dan tipe data
+    //  document.writeln("<p>" + hasil2 + "<p>");
+
+    // const nilaiUjian = 70;
+    // const nilaiAbsensi = 70;
+    
+
+    // const lulusUjian = nilaiUjian > 75;
+    // document.writeln( "<br> nilai ujian " + nilaiUjian);
+    // const lulusAbsensi = nilaiAbsensi > 75;
+    // document.writeln( "<br> nilai absensi " + nilaiAbsensi);
+
+    // const lulus = lulusUjian || lulusAbsensi;
+    // document.writeln("<br> mereka lulus " +  lulus);
+
+
+    // fitur console log
+    // console.debug("ini adalah hello word debug");
+    // console.info("ini info");
+    // console.warn("ini warn");
+    // console.error("ini error");
+
+    //String Template
+    
+
+    // const nama = "Marianto";
+    // const templat = `namanya :${nama}`; // harus pake backtick
+
+    // console.log(templat);
+    // document.writeln(templat);
+
+    // document.writeln("<br>");
+
+    // const nilai = 70;
+    // const templete = `Nama : ${nama} ,  nilai : ${nilai > 80}`;
+
+    // document.writeln(templete);
+
+//multi line string di string templete
+
+    // const multiline = `Nama saya 
+    // marianto,
+    // saya ini lagi bikin multi li,
+    // ne string,
+    // pake backtick`;
+    
+
+    // document.writeln("<pre>");
+    // document.writeln(multiline); 
+    // document.writeln("</pre>");
+   
+
+//Konversi tipe data
+    // const value1 = "1";
+    // const value1 = parseInt("1"); // parse int mengkonversi
+    // const value2 = 1;
+    // const sum = value1 + value2;
+    // document.writeln(sum); // string ditambah integer ;
+
+    // document.writeln(`<p>${parseInt("1.42")}</p>`); // koma diabaikan 
+    // document.writeln(`<p>${parseFloat("1.122")}</p>`); // ada koma
+    // document.writeln(`<p>${Number("1.45242")}</p>`); // gabungan integer dan float
+
+    
+    // const a = 1;
+    // const b = 1;
+    // const total = a.toString() + b.toString(); //mengubahh int ke string
+    // document.writeln(`<p>${total}</p>`);
+
+// Nan
+    // document.writeln(`<p>${parseFloat("d1dss")}</p>`); //  di depan ga bisa
+    // document.writeln(`<p>${parseFloat("1faasdf")}</p>`); // di belakang msh bisa
+    // document.writeln(`<p>${parseInt("ff1dsdds")}</p>`); // 
+    // document.writeln(`<p>${parseInt("1faasdf")}</p>`); // 
+    
+    
+    // document.writeln(`<p>${Number("1faasdf")}</p>`); //  ga bisa sma sekali
+    // document.writeln(`<p>${Number("f1faasdf")}</p>`); //  ga bus=
+    // document.writeln(`<p>${Number("ffaasdf")}</p>`); //  ga bus=
+    
+    // document.writeln(`<p>${isNaN("jumlah")}</p>`); // fungsi isnan
+    // document.writeln(`<p>${isNaN("13")}</p>`);
+
+    
+//Tipe data array
+
+    // document.writeln(`<p></p>`);
+
+//     let data = [];
+//     data.push("marianto");
+//     data.push("mari", "anto");
+//     data.pop(); // menghapus anto
+//     data.shift(); //menghapus marianto
+//     data.unshift("hallo"); //menambahkan hallo di depan 
+//     data[1] = "hai"; //mengubah data array dari posisi index
+//     data.push("marrrr");
+//     delete data[1]; //menghapus index 1, jadi sisa index 0 dan 2 
+//     data.push("alex"); //saat di push tambah ke index 3 , bukan isi yang index 1
+// // walaupun di delete index 1 , tapi tetap ada , kek di hide aj , jadi perlu diingat,
+// data[1] = "dimasukan lagi";
+// //memasukan data array ke dalam array 
+
+//     data.push(["ini" , "data", "array"]);  
+
+//     console.info(data[4][0]); // mengaksess array multi dimensi
+
+//     console.info(data.length);
+//     console.table(data);
+
+
+// tipe data object
+    // const orang = {};
+
+    // orang["nama"] = "Marianto";
+    // orang["alamat"] = "jalan passar baru";
+    // orang["umur"] = "30";
+
+    // console.table(orang); // cek di konsol 
+
+    // delete orang["umur"]; // menghapus data object / property object
+    // console.table(orang);
+
+
+    // const orang1 = { //cara buat object di  isi langsung
+    //     "nama panjang" : "marianto junior", // kalau mau diisi spasi pake pakai pettik 
+    //     nama : "marianto",
+    //     kelas : "kelas 10",
+    //     umur : 12
+
+    // };
+
+    // console.table(orang1);
+
+    // //mengakses data property objeck
+
+    // console.info(` Nama Panjang : ${orang1["nama panjang"]}`); //karna ada dua kata jadi pake petik juga aksesey\
+    // console.info(` nama : ${orang1.nama}`);
+    // console.info(` kelas: ${orang1.kelas}`);
+    // console.info(` umur: ${orang1.umur}`);
+
+
+
+// alert , promt dan comfirm
+
+    // const masuk = confirm("Apakah anda ingin login ?");
+    // if (masuk) {
+    //     const promt = prompt("siapakah nama anda ? ");
+    //     alert("heello " + promt);
+    // }
+    // else {
+    //     alert("bye bye");
+    // }
+
+// undifined //variable tanpa nilai
+
+    // let data;
+    // if(data === undefined) {
+    //     alert("undifined");
+
+    // }
+    // else{
+    //     alert("defined");
+    // }
+
+
+    // let data = ["eko"]; // data index tidak ada hasilnya undifined,
+    // if(data[2] === undefined) {
+    //     alert("undifined");
+    // }
+    // else{
+    //     alert("defined");
+    // }
+
+
+ // bedanya null dan undifined;
+
+//  let nama = null;
+
+//  if(nama === undefined) {
+//      alert("undifined");
+//  } else if (nama === null ) {
+//      alert("null") 
+//  } else {
+//      alert ("fdff");
+//  }
+
+
+ // switch statement // untuk kodisi if yang lebih sederhana \
+
+
+    // let nilai  = "B";
+
+    // switch(nilai) {
+    //     case "A":
+    //         document.writeln("<p> Kamu dapat nilai A </p>");
+    //         break;
+    //     case "B":
+    //     case "C":
+    //         document.writeln("<p> Kamu dapat nilai B/C </p>");
+    //         break;
+    //     case "D":
+    //         document.writeln("<p> Kamu dapat nilai D </p>");
+    //         break;
+    //     case "E":
+    //         document.writeln("<p> Kamu dapat nilai E </p>");
+    //         break;
+    //     default :
+    //         document.writeln("<p> Kamu dapat nilai tidak diketahui </p>");
+    // }
+
+
+// Operator typeof 
+
+    // var data = "faa"; // data string
+    // var data = 31; // data integer
+    // var data = true; // data boolena
+    // var data = {}; // data objeck
+ 
+
+// in operator // cek property di object
+
+    // const person = {
+    //     Fname: "Marianto",
+    //     Lname: "Junior"
+    // };
+
+    // const result = "Fname" in person; // cek apakah property ada di objeck
+    //  document.writeln(`<p>${result}</p>`);
+
+// ternary operator // sederhanya if yang disederhankan \
+// cocok untuk kondisi penyingkatan dan kondisi benar salah tanpa cabang,
+
+    // const nilai = 34;
+
+    // let ucapan = nilai >= 70 ? "Selamat anda lulus" : "Silahkan coba Lagi";
+
+    // document.writeln(`<p> ${ucapan}</p>`)
+    
+    // nulish coalescing operator
+    
+    // let parameter;
+    // let data = parameter;
+    
+    // if(data === undefined || data === null) {
+    //     data = "data default";
+    // }
+
+    // document.writeln(`<p>${data} </p>`);
+    
+    //diatas contoh cek data bisa 
+    // yang dibawah yang bentuk nuliss . seperti tenery oppertor cmn pake tanda seru 2
+    
+    // let parameter;
+    
+    // let data = parameter ?? "nilai default";
+    
+    // document.writeln(`<p>${data} </p>`);
+    
+
+    // optional chaining.
+    //contoh kasus
+
+    // const person = {};
+
+    // const country = person.adress.country; //
+    // document.writeln(`<p>${country} </p>`);
+    // disini error tpi tidak ada tanda , jadi bisa menganggu tidak tau salah dimana
+    // bisa diakalin pake iff ,tpi ribet, jadi pakai optional chaniing
+
+    // let person = {}; // tidak perlu pake iff bercabang. cukup shortcut channing akses.property
+    // let country = person?.adress?.country;
+    // document.writeln(`<p>${country} </p>`);
+
+
+    //loop 
+
+    // for(;;) { //infinit loop
+    //     alert("hai");
+    // }
+
+    // let counter = 0;
+    // for(;counter<=10;) {
+    //     document.writeln(`<p>${counter}</p>`);
+    //     counter++;
+    // }
+
+    // versi kedua
+    //     for( let counter = 5;counter<=10; counter++) {
+    //     document.writeln(`<p>${counter}</p>`)
+    // }
+    
+
+    // while loop // lebih sederhana dari for
+    // let counter = 1;
+    // while(counter <=10) {
+    //     document.writeln(`<p>${counter}</p>`);
+    //     counter++;
+    // }
+
+    //do while loop
+    // minimal dilakukan sekali
+
+    // let counter = 1;
+    // do {
+    //     document.writeln(`<p> ${counter}</p>`);
+    //     counter++;
+
+    // } while(counter <= 12);
+
+    //break dan countinue 
+
+    // let counter = 1; // ini pakai break
+    // while(true) {
+    //     document.writeln(`<p>${counter}<p>`);
+    //     counter++;
+
+    //     if(counter >10) {
+    //         break;
+    //     }
+    // }
+
+    //contoh kasus continue
+
+    // for( let i = 0; i<=100; i++) {
+    //     if(i % 2 === 0) {
+    //         continue;
+    //     }
+    //     document.writeln(`<p> Perulangan ganjil ${i}<p>`);
+
+    // }
+
+
+
+    // for in  //looping untuk setiap property object ,pake in 
+
+
+    //untuk object
+    // const person ={
+    //     Fname : "marianto",
+    //     LName : "junior"
+    // };
+
+    // for(const property in person) {
+    //     document.writeln(`<p> ${property} : ${person[property]}  <p>`);
+
+    // }
+
+    //untuk array
+    // const names = ["andi", "dika"];
+    // for(const index in names ) {
+    //     document.writeln(`<p> ${index} : ${names[index]} <p>`);
+
+    // }
+    
+    
+    //sekarang for of
+    //kalo for of yang diambil itu value nya bukan property atau index
+    
+    
+    // const names = ["andi", "dika"]; // kalo
+    // for(const index of names ) {
+    //     document.writeln(`<p> ${index} <p>`);
+
+    // }
+    // yang ini karekter
+    // const fullName = "MariantoJunior17"
+    // for(const Charcter of fullName ) {
+    //     document.writeln(`<p> ${Charcter} <p>`);
+
+    // }
+    
+    // yang ini index karekter
+    // const fullName = "MariantoJunior17"
+    // for(const Charcter in fullName ) {
+    //     document.writeln(`<p> ${Charcter} <p>`);
+
+    // }
+    //with statement // mengecilkan scope tidak perlu person.nama untuk akses nama
+
+    //bandingkan 
+
+
+    //     const orang1 = {
+    //     nama : "marianto",
+    //     kelas : "kelas 10",
+    //     umur : 12
+
+    // };
+
+    //     //akses data dengan cara biasa 
+
+    //     console.info(orang1.nama);
+    //     console.info(orang1.kelas);
+    //     console.info(orang1.umur);
+
+    //     //akses data dengan with //namun tidak direkomendasikan
+    //     //membuat ambigu katanya
+
+    //     with (orang1) {
+    //         console.info(nama);
+    //         console.info(kelas);
+    //         console.info(umur);
+    //     }
+
+    //bagian function 
+
+    // function sayHello () {
+    //     document.writeln("Hello World");
+    // }
+    // sayHello();
+    // sayHello();
+    // sayHello();
+
+
+    // function sayHello (nama) {
+    //     document.writeln(`${nama}`)
+    // }
+      
+    // sayHello("udin");
+
+    //return function >> untuk mengembalikan nilai function
+
+    //ibarat function 1 + 2 nanti hasilnya 3. hasil akhir funtion == 3, jadi 3 dan function itu sendiri sama
+
+
+    // function funReturn (Fname, Lname = "andi") {
+    //     const say = document.writeln(`Hello ${Fname} ${Lname} `);
+    //     return say;
+    // }
+
+    // const result = funReturn("marianto" ,);
+    // document.writeln(`<p>${result}</p>`);
+
+    // const array =[21,42,423,53,2,23,5,7,189,13,]; //
+    // const search = 21;
+
+    // function isContains(array, searchValue) { // fungsi mencocokan data ke array
+    //     for (const element of array) {
+    //         if (element === searchValue) {
+    //             return true; // klo sesuai return true 
+    //         }
+    //     }
+
+    //     return false;
+    // }
+
+    // const found = isContains(array, search); 
+    // document.writeln(`<p> ${found}</p>`);
+
+ //
+
+// optional parameter  dan Default Value
+    // function sayHello (FName, MName, LName = "Junior") {
+    //     console.log(FName);
+    //     console.log(MName);
+    //     console.log(LName);
+    // }
+
+    // sayHello("afdaf", "fadfa", "fdafafa");
+    // sayHello("afdaf", "fadfa", ); //otomatis disii junior sebagai templet default
+    // sayHello("fadfa", ); // index ke dua otomatis jadi undifined , tidak error tapi undifined
+    // sayHello("fadfa", "fads" ,undefined ); 
+    // sayHello("fadfa", "fads", null ); 
+
+
+//rest parameter // atau variable argument
+
+        /*ini namanya rest parameter , parameternya ada 2 tapi salah satu nya dalam bentuk array , jadi parameter kedua bisa di isi sebanyak mungkin*/
+
+    // function sum (name , ...data) { 
+    //     let total = 0;
+    //     for (const item of data ){
+    //         total += item;
+    //     }
+
+    //     document.writeln(`<p> Total ${name} adalah ${total}</p>`);
+    // }
+
+    // sum("marianto" , 12,41,4,14,1,12);
+    // sum("ebidin" , 12,41,4,14,132,12);
+
+
+
+    // const value =[12,43,63,22,75,231]; //Total contoh adalah 012,43,63,22,75,231 
+    // sum("contoh" ,...value);
+    
+    // disini value array tppi pas dikirim ke fungsi jadi 1 buah data, atau data ke satu
+    //padahal sudah dalam bentuk array juga
+    //disini kita pakai spred syntax
+    
+    
+    // const value = [12,43,63,22,75,231]; //Total contoh adalah 012,43,63,22,75,231 
+    // sum("contoh" ,...value);
+
+// argument object solusi selain rest parameter
+// kekurangan argument objeck adalah kita tidak tau mana dulu yang dihitung 
+//ga ada parameter, cuman ada ada kumpulan dan dan kita tidak tau mana dulu yand dihitung.
+    // function oldSum () { 
+    //     let total = 0;
+    //     for (const argumen of arguments) {
+    //         total += argumen;
+    //     }
+
+    //     document.writeln(`<p> Total adalah ${total}</p>`);
+        
+    // }
+
+    // oldSum(232,,534,232,52,52, "fdsfd" ,"dfffdf", 1000,5);
+    // oldSum(232,534,232,52,52);
+
+
+// menkonversi fungsi ke variabel/ value 
+
+    // function sayHello(name) {
+    //     document.writeln(`  HElo ${name}`);
+    // }
+
+    // sayHello("aeko"); //pemanggilan biasa 
+
+    // const say = sayHello; //konversi fungsi ke value
+
+    // say("budo"); // variable yang dijadikan fungsi
+
+
+
+    // function giveMEName (callback) {
+    //     callback("eko");  //yang di belakang layar = callbak jadi sayy hello
+    //     // sayHello("eko");
+    // }
+
+    // giveMEName(sayHello);    
+    // giveMEName(say);     // inilah maksudnya function jadi value,paremter dll
+
+// anonymous function atau tanpa nama
+
+
+    // let say = function (name) { // ini anonymoud function tanpa nanma pas buar variable di isi function
+    //     document.writeln(`Hello ${name}`);
+    // };
+
+    // say("ebidin");
+
+    // anounymous funtion ke dalam parameter
+
+//memang agak membingungkan 
+    // function givemeName (callback) {
+    //     callback("hanu");  // intinya disini polanya || callback("hanu") == function(name) || jadi ya refensi name dari hanu:
+    
+    // }
+
+    // givemeName(function(name){
+    //     document.writeln(`<p> ${name} </p>`)
+    // })
+
+
+
+
+// function dalam function
+
+    // function outer () {
+    //     function iner () {
+
+    //     }
+
+    //     iner ();
+    //     iner ();
+    // }
+
+    // outer();
+    // iner(); // yg eror disini karena iner scope nya di dalam outer, klo selevel dengan outer maka error.
+
+
+//rekursif function 
+
+//kasus faktorial 
+
+    // function faktorial (value) { //ini pakai pengulangan
+    //     let result = 1;
+    //     for (let i = 1; i<= value; i++) {
+    //         result *= i;
+    //     }
+
+    //     return result;
+    // }
+    // console.info(faktorial(3));
+
+
+
+    // function faktorial2 (value) { // ini pakai rekursif
+    //     if(value === 1) {
+    //         return 1;
+    //     } else {
+    //         return value * faktorial2(value - 1);
+    //     }
+
+    // }
+    // console.info(faktorial2(5));
+
+//function generator // bisa di iterasi
+
+    // function* createNames () { // diketahui dari tanda bintang setelah function
+    //     yield "marianto";
+    //     yield "udin";
+    //     yield "peaak";
+    // }
+
+    // const names = createNames();
+
+    // for (const name of names) { //di iterasi 
+    //     console.info(name);
+    // }
+
+
+//kasus komplek buat data ganjil //generator function
+
+    // function* buatGanjil (value) {
+    //     for( i = 0; i <= value; i++) {
+    //         if( i % 2 === 1) {
+    //          yield i;  // klo if nya true ,ambil data yg sedang dioperasikan. yield mirip index tpi bukan array
+    //         }
+    //     }
+    // }
+
+    // const numbers = buatGanjil(100);
+
+    // for (const number of numbers) {
+    //     console.info(number);
+    // }
+
+
+
+// arrow function // lebih ringkas aja kelebihannya 
+
+    // harus ada pembantu , pake variable
+
+    // const sayHello = (name) => { // arrow function
+    //     const say = `Hello ${name}`;
+    //     console.info(say);
+    // }
+    // sayHello("udin")
+
+
+    //arrow fucntion 1 baru tanpa kurng kurawan;
+
+    // const sayHello2 = () => console.info(`SElamfa`); // satu baris
+
+    // sayHello2();
+
+
+// arrow function return value // hasil return tanpa tulis return
+    // const sum = (first, second) => first + second;
+
+    // console.info(sum(10,232));
+
+    // bandingkan dengan yang normal
+
+    // function sum1 (first1, second1) { // yang biasa pake 2 baris karna ada kurawal dan return
+    //     return first1 + second1;
+    // }
+
+    // console.info(sum1(29,23));
+
+
+    //bisa disingkat lagi
+    // const sum = name => name * 2 ; // arrow functi tanpa kurung () di parameter
+
+    // console.info(sum(10));
+
+
+    //materi clossure //
+    //funngsi closure untuk akses funggsi add keluar , biar bisa dipake di luar
+
+    // function createAdder (value) {
+    //     function add(param) {
+    //         return value + param;
+    //     }
+
+    //     return add;
+    // }
+
+
+    // createAdder(2);
+
+    // const addTwo = createAdder(2); 
+    // // dibelakang layar ==
+    // // fucntion addTwo (param) {
+    // // return 10 + 2;
+    // // }
+
+    // // intinya variable addTwo jadi fungsi di dalam creatadder yaitu add, di substitusi aja gitu
+
+    // console.info(addTwo(10));
+
+
+//objectk methode.
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//  const person = {
+//      nama : "Marianto",
+
+//      sayHello : function (name) { //fucction didalam objeck berubah nama jadi methode
+//          alert(`Hello ${name}`)
+//      }
+//  };
+//     person.sayHello("budi");
+
+// cara kedua //beda cara buat nya aja
+
+//     const person = {
+    //      nama : "Marianto",
+    //  };
+    
+    //     person.sayHello = function (name) {
+        //         alert(`Hello ${name}`)
+//     }
+//     person.sayHello("budi");
+
+//kata kunci this
+
+// console.info(this);
+
+
+//  const person = {
+//      nama : "Marianto",
+
+//      sayHello : function (name) { //fucction didalam objeck berubah nama jadi methode
+//          console.info(`Hello ${name} my name is ${person.nama}`)
+//          console.info(`Hello ${name} my name is ${this.nama}`) // sma saja
+//      }
+//  };
+//     person.sayHello("budi");
+
+
+// getter dan setter 
+
+//  const person = {
+//      firstName : "Marianto",
+//      lastName : "Junior",
+//      get fullName () { // pake get, bisa juga pake fungsi tpi yg kita mau beneran property
+//          return `${this.firstName} ${this.lastName}`
+//      },
+
+//      //sekarang yg setter
+//      set fullName (value) {
+//         const array = value.split(" ");
+//         this.firstName = array[0];
+//         this.lastName = array[1];
+//      }
+
+//  }
+//karna fullname property yang dibuat dari get maka saat mau diubah datanya juga harus ada fitur set dulu,
+//
+// person.fullName = "mariat fdajkja";  // 
+// console.table(person);
+
+
+// person.firstName = "alex";
+// console.info(person.fullName);
+
+
+
+
+
+
+///DESTRUCTURING ARRAY  // mengambil value sebuah array kedalam beberapa variable
+
+// const names = ["angka1" , "angka2" ,"angka3", "angka4" ,"angka5"]; // ini sebuah array
+
+// const [satu, dua , tiga , ...empatdanlima] = names;  // ini buat variable sekaligus dan langsung dipasangkan value dari aaray
+//empat dan lima memilik 2 valuu ,jadi balik ke array baru lagi
+
+// console.info(satu);
+// console.info(dua);
+// console.info(tiga);
+// console.info(empatdanlima);
+
+// Des
+
+
+//selesai
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html> 

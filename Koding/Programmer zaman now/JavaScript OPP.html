@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Javascript</title>
+</head>
+<body>
+
+
+<script>
+
+    //object biasa
+
+    const eko = {
+        nama :"marianto",
+        kelas : 12
+    };
+
+    // membuat kelas pake function/ yaitu constractor function
+
+
+    // function Person () { // construcktor functio pake huruf besar ..Person // ini buat kelas bukan function, buat kelas pake construcotr function
+    //     // this.Lname = "eega"; // ini menambahkan property ke hana dan ebidin, // sebagai bluprint dari person lebih efektif
+    // }
+
+    // const hana = new Person();  // ini buat objek dari kelas ditaruh di kelas Person, bedakan dengan buat objeck biasa
+    // // hana.Fname = "Hanabi ggwp"; // ini menambahkan propery objek biasa, hanya di hanabi, ribet 1 1 tulinsya.. ga efektif
+    // //
+    // const ebidin = new Person();
+
+    
+    //methode di konsturktor function 
+    
+    
+        function Person () {
+
+            this.sayHello = function (name) { // ini methode didalam blueprint class jadi objeknya bisa akses
+                console.info(`HEllo ${name} my name is `)
+            }
+          
+        }
+    
+        const hana = new Person(); 
+        const ebidin = new Person();
+    
+        hana.sayHello("alex"); //  selain blue print property , juga hana mengakses methode sayHello dari kelas /objek person.
+
+
+
+        // constructor inheritance // mengkakses k
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+</script>
+</body>
+</html>
