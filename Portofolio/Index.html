@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website.css">
+    <title>Website List</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #03a9f4;
+
+}
+
+.container {
+    padding: 40px;
+    background: #182b3c;
+    box-shadow:  0 15px 25px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+.container h2 {
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    
+
+}
+
+.container ul {
+    position: relative;
+    
+}
+
+.container ul li {
+    position: relative;
+    list-style: none;
+    display: table;
+    margin: 10px 0;
+    padding-left: 34px;
+    padding-right: 5px;
+    
+
+}
+p {
+    top :2.5px;
+}
+
+.container ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background:transparent;
+    border-radius: 34px;
+    transition:  background 0.5s, width 0.5s;
+    transition-delay: 0.5s, 0s;
+    border: 2px solid #03a9f4;
+    box-sizing: border-box;
+}
+
+.container ul li:hover::before {
+
+    width: 100%;
+    background: #03a9f4;
+    transition-delay: 0s, 0.5s;
+
+}
+
+.container ul li::after {
+    content: '';
+    position:absolute;
+    top: 13px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition:0.5s;
+    transition-delay: 0s;
+
+
+}
+
+.container ul li:hover::after {
+    left: 24px;
+    transition-delay: 0.5s;
+    transform: rotate(45deg), scale(1.5);
+}
+
+.container ul li p {
+    position: relative;
+    z-index: 10;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.container ul li a {
+    position: relative;
+    z-index: 10;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration:none;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Website Properties</h2>
+        <ul>
+           <li><p><a href="ComingSoonPage/ComingSoonPage.html">ComingSoonPage</a></p></li>
+           <li><p><a href="ContactForm/ContactForm.html">ContactForm</a></p></li>
+           <li><p><a href="FullScreenBackground/FullScreenBackground.html">FullScreenBackground</a></p></li>
+           <li><p><a href="ImageSlider/ImageSlider.html">ImageSlider</a></p></li>
+           <li><p><a href="PricingPlanSection/PricingPlanSection.html">PricingPlanSection</a></p></li>
+           <li><p><a href="ProfileCard/ProfileCard.html">ProfileCard</a></p></li>
+           <li><p><a href="RegistrationForm/RegistrationForm.html">RegistrationForm</a></p></li>
+           <li><p><a href="RegistrationPageDesign/RegistrationPageDesign.html">RegistrationPageDesign</a></p></li>
+           <li><p><a href="ResponsiveWebsite/ResponsiveWebsite.html">ResponsiveWebsite</a></p></li>
+           <li><p><a href="SearchBox/Searchbox.html">SearchBox</a></p></li>
+           <li><p><a href="SelectMenu/SelectMenu.html">SelectMenu</a></p></li>
+           <li><p><a href="ToggleSwitch/ToggleSwitch.html">ToggleSwitch</a></p></li>
+           <li><p><a href="TravelBookingForm/TravelBookingForm.html">TravelBookingForm</a></p></li>
+           <li><p><a href="AnimatedCheckBox/AnimatedCheckBox.html">AnimatedCheckBox</a></p></li>
+           <li><p><a href="BorderAroundButton/BorderAroundButton.html">BorderAroundButton</a></p></li>
+           <li><p><a href="CallAnimation/CallAnimation.html">CallAnimation</a></p></li>
+           <li><p><a href="CircleLoader/CircleLoader.html">CircleLoader</a></p></li>
+           <li><p><a href="CirclePreloader/CirclePreloader.html">CirclePreloader</a></p></li>
+           <li><p><a href="FillTextEffect/FillTextEffect.html">FillTextEffect</a></p></li>
+           <li><p><a href="FlexboxHover/FlexboxHover.html">FlexboxHover</a></p></li>
+           <li><p><a href="ImageFillOnHover/ImageFillOnHover.html">ImageFillOnHover</a></p></li>
+           <li><p><a href="LoaderRing/LoaderRing.html">LoaderRing</a></p></li>
+           <li><p><a href="SkewText/SkewText.html">SkewText</a></p></li>
+           <li><p><a href="SlideImage/SlideImage.html">SlideImage</a></p></li>
+           <li><p><a href="SocialMediaIcon/SocialMediaIcon.html">SocialMediaIcon</a></p></li>
+           <li><p><a href="GradientBorder/GradientBorder.html">GradientBorder</a></p></li>
+           <li><p><a href="SlidingButton/SlidingButton.html">SlidingButton</a></p></li>
+           <li><p><a href="">ds</a></p></li>
+        </ul>
+    </div>
+</body>
+</html>

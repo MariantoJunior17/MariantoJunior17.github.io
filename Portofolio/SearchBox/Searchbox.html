@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Varela+Round?query=varela">
+    <link rel="stylesheet" href="Searchbox.css">
+    <script src="Searchbox.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div id="searchBox">
+            <img src="logo.svg" alt="logo" id="googleIcon">
+            <input type="text" placeholder="Search Google or type a URL">
+            <img src="mic.png" alt="logo" class="mic-icon">
+        </div>
+    </div>
+<script>
+    const searchBox = document.getElementById("searchBox")
+    const googleIcon = document.getElementById("googleIcon")
+    const mic = document.getElementsByClassName("mic-icon")
+
+
+    googleIcon.onpointerover = function () {
+    searchBox.classList.toggle("active");
+
+    mic.onclick = function () {
+    searchBox.classList.toggle("aktif")
+    }
+}
+</script>
+</body>
+</html>
