@@ -11,12 +11,12 @@
 
 <script>
 
-    //object biasa
+    // //object biasa
 
-    const eko = {
-        nama :"marianto",
-        kelas : 12
-    };
+    // const eko = {
+    //     nama :"marianto",
+    //     kelas : 12
+    // };
 
     // membuat kelas pake function/ yaitu constractor function
 
@@ -34,35 +34,294 @@
     //methode di konsturktor function 
     
     
-        function Person () {
+        // function Person () {
 
-            this.sayHello = function (name) { // ini methode didalam blueprint class jadi objeknya bisa akses
-                console.info(`HEllo ${name} my name is `)
-            }
+        //     this.sayHello = function (name) { // ini methode didalam blueprint class jadi objeknya bisa akses
+        //         console.info(`HEllo ${name} my name is `)
+        //     }
           
-        }
+        // }
     
-        const hana = new Person(); 
-        const ebidin = new Person();
+        // const hana = new Person(); 
+        // const ebidin = new Person();
     
-        hana.sayHello("alex"); //  selain blue print property , juga hana mengakses methode sayHello dari kelas /objek person.
+        // hana.sayHello("alex"); //  selain blue print property , juga hana mengakses methode sayHello dari kelas /objek person.
 
 
 
-        // constructor inheritance // mengkakses k
+        // constructor inheritance // mengkakses property antar konsturctor function
+
+        // function Emeployee (firstName) {
+        //     this.firstName = firstName;
+        //     this.sayHello = function (name) {
+        //         console.info(`Hello ${name} , Selamat Pagi`);
+        //     }
+
+        // }
+
+        // function Manager (firstName, lastName)  {
+        //     Emeployee.call(this, firstName);
+
+        //     this.lastName = lastName;
+
+        // }
+
+        // const eko = new Manager("marianto" , "junior");
+
+        // console.info(eko); //jika diconsole Function constructor Manager punya methode say hello juga, jadi kita bisa
+        //akses semua property employee jika mau dipanggil// call 
+
+
+// Protype
+
+
+        // Person.prototype.sayBye = function () {
+        //     console.info(`Hello  , Selamat Pagi`);
+        // }
+
+        // console.info(hana)\\
+
+
+// Kelas 
+// function contructor adalah cara buat kelas yang lama, yang baru pakai kelasl
+
+    // class Person {
+
+    // }
+
+    // const eko = new Person();
+
+    // console.info(eko);
+
+    // Person.prototype.sayHello = function () {
+    //         console.info(`Hello  , Selamat Pagi`);
+
+    // }
+
+    // eko.sayHello;
+
+
+//Class Constructor 
+
+    //     class Person {
+    //         constructor(name) { // ini adaalh constructor di kelass agak beda karna ga ada () tanda
+    //         console.info(`Hello  , Selamat Pagi`);
+    //         this.name = name;
+            
+    //     //     this.sayHello = function () { // ini tidak direkomendasikan karna methode ini nempel di objeck eko dan budi, dan kita yg nempel di prototype jadi di belakang layar dan kalau mau pakai tinggal di akses aja dari protoype
+    //     // }
+    // }
+
+    //     sayHello () { // ini simpan di prototyoe, kita ga perlu tulis funtion dan this. ga apa apa 
+    //         }
+    //         }
+        
+
+
+    //     const eko = new Person("eko");
+
+    //     console.info(eko.name);
+    //     console.info(eko);
 
 
 
+// menthode di class  //contoh diatas
 
 
+//class inheritance prototype /pewarisan dari kelas ke kelas beda dari constuctor inheritance ga pake ke call tapi pake extends. 
 
 
+// mengakses methode antar keles  //pakai super.methodenya
+// class Employe {
+//             constructor (name) {
+//                 this.name = name;
+//             }
+
+//             sayHello (name) {
+//                 console.info(`Hello  ${name} ${this.name} , Selamat Pagi`);
+
+//             }
+
+//             sayBye () { // ini methode di perent class  kita cobe akses dari child class
+//                 console.info(`bye`)
+//             }
+//         }
+// class Manager extends Employe {
+//             // constructor (name) {  //ini consturckter 
+//             //     this.name = name;
+//             // }
+
+//             sayHello (name) {
+//                 console.info(`Hello  ${name} ${this.name} , Selamat Pagi`);
+
+//             }
+
+//             sayBye() {
+//                 super.sayBye();
+//                 console.info(`paint circle`);
+//             }
+//         }
+
+//         const eko = new Manager;
+//         eko.sayBye();
 
 
+// Class Getter SEtter 
+
+    // class Person {
+    //     constructor (firstName, lastName) {
+    //         this.firstName = firstName;
+    //         this.lastName = lastName;
+    //     }
+
+    //     get fullName () {
+    //         return `${this.firstName} ${this.lastName}`;
+    //     }
+
+    //     set fullName (value) {
+    //         const result = value.split (" ");
+    //         this.firstName = result[0];
+    //         this.lastName = result[1];
+    //     }
+    // }
+
+    // const ebi = new Person("eko" , "dkk");
+    
+    // console.info(ebi);
+    // console.info(ebi);
+    // console.info(ebi.fullName);
+    
+    // ebi.fullName = "madida fkjdkjd";
+    // console.info(ebi.fullName);
+    
+    // private class field 
+
+    // class Counter {
+    //     #counter = 0;
+
+    //     increment () {
+    //         this.#counter++;
+    //     }
+        
+    //     decrement () {
+            
+    //         this.#counter--;
+    //     }
+
+    //     get () {
+    //         return this.#counter;
+    //     }
+    // }
+
+    //     const hitung = new Counter();
+    //     hitung.increment();
+    //     hitung.increment();
+    //     hitung.increment();
 
 
+    //     console.info(hitung.get());
+    //     hitung.decrement();
+    //     console.info(hitung.get());
+
+    //     console.info(hitung);
+
+    //     hitung.conter = 100;
+    //     hitung.#conter = 100; // ga bisa di ganti karna ini private 
 
 
+// private methode 
+
+
+    //     class Orang {
+    //         sayhello () {
+    //             console.info(`ffdd`)
+    //             this.#hello();
+    //         }
+
+    //         #hello () {
+    //             console.info(`fdd`)
+
+    //         }
+    //     }
+
+    //     const ah = new Orang();
+
+    //     ah.sayhello();
+    //     // ah.#Hello(); // tidak bisa di akses karna private 
+
+    // // operatori isntace of 
+
+    
+    //     class Name {
+
+    //     }
+
+
+    //     class Nama  extends Name{
+
+    //     }
+
+    //     const budi = new Name();
+
+    //     const ekoo = new Nama();
+
+    //     console.info( ekoo instanceof Name); //instace itu cek apakah exis di class tertentu, disini pake extends hasilnya juga true
+
+        // 
+// static field  
+
+// static methode
+
+        // class Guru {
+        //     static nama = "guru"; // 
+        //     static kelas = "12";
+        //     static umur = "13";
+
+
+        //     static sayWow () { // sama juga utuk akses methode ini pake Guru. saywow, bukan object. saywow , klo udh static property atau methode melengket ke nama kelas (guru) bukan ke object lagi 
+                
+        //    }
+        // }
+
+
+        // const object = new Guru();
+
+        // console.info(object.nama); // klo ga ada static kita akses pake object.nama itu bisa / dan  ada klo console.info(object ada propety nama, kelas, umur) tpi karna udh di static ,jadi nama kelas umur name di Guru, jadi kita akses dari kelas bukan object, contoh guru.nama  ,, dan object cuman objek kosong aja.
+        // console.info(Guru.nama); // kalau ini bisa 
+
+
+// errorr  & error handling
+
+            // class MathUtil {
+            //     static sum (...number) {
+            //         if(number.length === 0) {
+            //             throw new Error("fddfd"); // disini klo kita mau bikin error( bukan alert ,promt) kita pakai error dan error ini perlu dibantu oleh trow, untuk dilempar atau dipicu, jadi klo mau bikin error harus pake trow juga karna mereka itu harus berpasangan, , klo errornya berhasil kode dibawahnya ga di ekseskusi
+            //         }
+
+
+            //         let total = 0;
+            //         for(const numb of number) {
+            //             total += numb;
+            //         }
+
+            //         return total;
+            //     }
+
+            // }
+
+            // // console.info(MathUtil.sum());
+
+            // const result = MathUtil.sum(3,52,323);
+
+            // console.log(result);
+    
+
+            
+            // error handling
+            
+ 
+    
+//class error 
          
 
 </script>
