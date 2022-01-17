@@ -1,1 +1,4 @@
- document.getElementById("wrap").innerHTML="Hai Selamat Datang"
+export let forum = {
+    total = 133,
+}
+

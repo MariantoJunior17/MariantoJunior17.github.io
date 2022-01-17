@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecma Script versi 6</title>
+</head>
+<body>
+<script>
+
+        //Sytact kelas 
+        class members {
+            constructor(name) {
+                this.name = name;
+            }
+
+            getData (name) {
+                return "namanya + " + name;
+             }
+
+             static getPoint () { // kita ga perlu pake member.getpoint , tpi bisa langsung members.getpoint karna ini bersifat static
+                 return "poinya."
+             }
+            
+        }
+
+
+        let member = new members("hilman");
+
+
+        // saat kita buat ini     let member = new members("hilman"); 
+        //artinya ada object baru , member , biar enak kita kasih cosntructer biar langsung jadi member.name (tak perlu dibuat manual)
+ 
+        console.info(member);
+        
+        console.log(member.getData("andi"));
+        
+        console.info(member);
+
+
+
+        //belajar export dan import 
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

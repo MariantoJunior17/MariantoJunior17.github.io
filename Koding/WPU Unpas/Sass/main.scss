@@ -1,0 +1,133 @@
+// $myColor: salmon; // ini membuat variable dan diisi warna agar bisa dipake lagi
+
+// header {
+//     background-color: $myColor;
+//     h1 {
+//         font-size: 3rem;
+//     }
+    
+//     p {
+//         color: $myColor;
+//     }
+// }
+
+        //section
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+// .main,footer { // di ambil class main dan footer lalu dari 2 itu masuklagi untuk target h1 dan p ,lalu di kasih format 
+//     h1,
+//     p {
+//         color: royalblue;
+//     }
+// }
+
+    // hasilnya dibawah
+    // .main h1,
+    // .main p, footer h1,
+    // footer p {
+    //   color: royalblue;
+    // }
+
+
+// //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//     //perent seletor 
+
+// .main { 
+//     /*
+//     seperti yg kita tau urutanya kan container>main>main-header
+//     tpi dengan kita kasih (&) di containter ccsnya akan seperti 
+//     .container .main {
+//          background-color: sandybrown;
+//         }
+
+//     //intinya sih kita klo lagi kerjaain sesuatu ga perlu capek capek pindah tempat bisa langsung akses parent langsung dari main.
+
+//     */
+
+//     .container  & {
+//         background-color: sandybrown;
+//     }
+//     .main-header {
+//         font-size: 23px;
+//     }
+
+//     & &-paragraf { // ini sama dengan .main .main-paragraf //sekali lagi '&' itu mengacu ke .main
+//         color: red;
+//     }
+
+//     &:hover {
+//         background-color: lightblue; 
+
+//         // bisa juga pake hover disini "&" ditambahakn untuk mengacu ke main
+//     }
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  >>>
+            //css variable  murni synctac css
+
+            // :root { // variable simpan di root agar biasa diakses secara global
+            //     --primary-color: salmon; //ini buat variable > pake '--'
+            //     --secondary-color:lightblue;
+            //     ---text-color:yellow;
+            // }
+
+            // body {
+            //     background-color: var(--primary-color);
+            // }
+
+            // h1 {
+            //     color: var(---text-color); // ini kelebihan mengunakan variabel adalah tingal pake aja klo mau dipake
+            //     //ga perlu hapal dan ini ccs bisa namun tidak semua menduukung
+            // }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            //variable milik sass
+
+            // $primer-color : salmon; //ini juga variable global bebas pake dimana aja,tpi bisa buat variable lokal
+            
+            // body {
+            //     background-color: $primer-color;
+            //     color: $text-color;
+            // } 
+
+            // h1 {
+            //     $text-color : yellow !global; //biar global
+            //     color: $text-color;
+            // }
+            
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//map
+
+//maxim 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+// ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+
+
+.header ul {
+    @include inline-list(); // ini cara panggil @mixin  nya pake @include 
+    li {
+        background-color: black;
+        a {
+            color: yellow;
+        }
+    }
+}
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>/
+//@import vs @use
+
