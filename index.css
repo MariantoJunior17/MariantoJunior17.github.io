@@ -1,1 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
+/*************Colors************/
+:root {
+  --background-color: #d5e3d5;
+  --bg-color-banners-marquee: #333333;
+  --text-color-marquee: #f3f7f3;
+  --bg-color-banners-css: #f3f7f3;
+  --text-color-css: #333333;
+  --text-color-span: #4d9f59;
+}
+
+/*************Some style************/
+body {
+  background-color: var(--background-color);
+  font-family: "Permanent Marker", cursive;
+  margin: 0;
+}
+
+span {
+  color: var(--text-color-span);
+}
+
+/**********with html marquee***********/
+.content__text_marquee {
+  text-align: center;
+  color: var(--text-color-marquee);
+  background-color: var(--bg-color-banners-marquee);
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+/************with CSS************/
+/*Require: .scroll__with_cs and .content__text_css:hover*/
+
+.scroll__with_css {
+  overflow-x: hidden; /*will hidde the navbar*/
+}
+
+.content__text_css:hover {
+  animation-play-state: paused; /*Will paused the content without renitialize*/
+}
+
+.content__text_css {
+  text-align: center;
+  background-color: var(--bg-color-banners-css);
+  color: var(--text-color-css);
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
+
+/***Scroll effect in CSS***/
+.scroll__css {
+  transform: translateX(100%);
+  animation: move__css linear 25s forwards infinite;
+}
+
+@keyframes move__css {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
