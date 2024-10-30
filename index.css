@@ -50,7 +50,7 @@ span {
 }
 
 /***Scroll effect in CSS***/
-.scroll__css {
+.scroll__csls {
   transform: translateX(100%);
   animation: move__css linear 50s forwards infinite;
 }
