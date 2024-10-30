@@ -52,7 +52,7 @@ span {
 /***Scroll effect in CSS***/
 .scroll__css {
   transform: translateX(100%);
-  animation: move__css linear 25s forwards infinite;
+  animation: move__css linear 50s forwards infinite;
 }
 
 @keyframes move__css {
